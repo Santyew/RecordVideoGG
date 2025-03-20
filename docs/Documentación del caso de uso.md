@@ -1,6 +1,6 @@
 # Especificación de casos de uso
 
-img src="/images/Diagrama Caso de uso.drawio.png
+<img src="/images/Diagrama Caso de uso.drawio.png">
 
 ## Especificacion del proyecto
 El proyecto trata sobre un sistema de mensajería en el cuál el usuario nuevo puede resgitrarse para poder enviar mensajería y el usuario común tambien el sistema se encarga de clasficar y detectar la mensajería y el mensajero envia la mensajería ademas de recibirlas para poder enviarlo.
