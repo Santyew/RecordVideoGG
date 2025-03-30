@@ -1,5 +1,5 @@
-package main.java.es.santiagorm.record_video_gg;
+package es.santiagorm.record_video_gg;
 
 public class Main {
-    
+
 }
