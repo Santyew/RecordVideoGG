@@ -1,8 +1,7 @@
-package es.santiagorm.record_video_gg;
+package es.santiagorm.recordvideogg;
 
-import java.awt.Button;
 
 public class Main {
 
-    @FXML Button
+    System.out.println("Hola tierra");
 }
