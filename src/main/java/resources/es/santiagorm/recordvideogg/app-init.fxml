@@ -5,11 +5,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller.InitController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="606.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../imagenesjava/ilustracion-cielo-nublado-estilo-anime-fondo-nubes-cielo-anime_803496-45.png" />
+            <Image url="@../imagenesjava/ilustracion-cielo-nublado-estilo-anime-fondo-nubes-cielo-anime_803496-45.png" />
          </image>
       </ImageView>
       <Button fx:id="openInicioSesion" mnemonicParsing="false" onAction="#onLoginButton" prefHeight="26.0" prefWidth="139.0" style="-fx-background-color: #3e92cc;" text="Iniciar sesion" textFill="WHITE" translateX="220.0" translateY="-160.0" />
