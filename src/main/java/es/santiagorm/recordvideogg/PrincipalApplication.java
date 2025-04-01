@@ -1,4 +1,4 @@
-package es.santiagorm.recordvideogg.frontend.model;
+package es.santiagorm.recordvideogg;
 
 
 import java.io.IOException;
