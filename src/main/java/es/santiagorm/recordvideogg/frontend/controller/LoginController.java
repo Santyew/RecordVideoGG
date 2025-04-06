@@ -24,9 +24,9 @@ public class LoginController extends AbstractController{
 
             Stage stage = (Stage) openAceptar.getScene().getWindow();
 
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("registro.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("selectype.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 417, 557);
-            stage.setTitle("Seleccion de mensaje");
+            stage.setTitle("Selecciona tipo de mensaje");
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
@@ -39,7 +39,7 @@ public class LoginController extends AbstractController{
     protected void onVolverAtras() {
          try {
 
-            Stage stage = (Stage) openAceptar.getScene().getWindow();
+            Stage stage = (Stage) VolverAtrasButton.getScene().getWindow();
 
             FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("app-init.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 417, 557);

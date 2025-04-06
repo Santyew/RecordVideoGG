@@ -21,11 +21,14 @@ public class RegistroController extends AbstractController {
         cambiarIdiomaRegistro();
     }
 
+    /**
+     * Funcion que cambia de escenario al aceptar boton
+     */
     @FXML
-    protected void onOpenAccept() {
-         try {
+    protected void onAceptar() {
+        try {
 
-            Stage stage = (Stage) openAccept.getScene().getWindow();
+            Stage stage = (Stage) openAceptar.getScene().getWindow();
 
             FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("app-init.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 417, 557);
@@ -38,11 +41,14 @@ public class RegistroController extends AbstractController {
 
     }
 
+    /**
+     * Funcion que cambia de escenario al volver Atrás boton
+     */
     @FXML
-    protected void onBackButton() {
-         try {
+    protected void onVolverAtras() {
+        try {
 
-            Stage stage = (Stage) BackButton.getScene().getWindow();
+            Stage stage = (Stage) VolverAtrasButton.getScene().getWindow();
 
             FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("app-init.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 417, 557);
@@ -52,6 +58,5 @@ public class RegistroController extends AbstractController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

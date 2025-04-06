@@ -40,14 +40,9 @@ public class AbstractController {
     @FXML
     public Button VolverAtrasButton;
 
+
     @FXML
     public TextField TextFieldEmail;
-
-    @FXML
-    public Text NombreUserText;
-
-    @FXML
-    public Text PasswordText;
 
     @FXML
     public Text EmailText;
@@ -57,14 +52,6 @@ public class AbstractController {
 
     @FXML
     public Text TextFieldPassword;
-
-    @FXML
-    public Button openAccept;
-
-    @FXML
-    public Button BackButton;
-
-
 
     /**
      * Funcion para cargar el idioma
@@ -80,7 +67,7 @@ public class AbstractController {
         ConfigManager.ConfigProperties.setPath(path);
     }
 
-     /**
+    /**
      * Método para obtener el idioma actual.
      */
     public static String getIdioma() {
@@ -94,42 +81,42 @@ public class AbstractController {
         idiomaActual = idioma;
     }
 
-
-
     /**
      * Funcion para cambiar el idioma del init
      */
     public void cambiarIdiomaInit() {
         openInicioSesion.setText(ConfigManager.ConfigProperties.getProperty("openInicioSesion"));
         openNUsuario.setText(ConfigManager.ConfigProperties.getProperty("openNUsuario"));
-            
+
     }
 
-     /**
+    /**
      * Funcion para cambiar el idioma del login
      */
     public void cambiarIdiomaLogin() {
         textUsuario.setText(ConfigManager.ConfigProperties.getProperty("textUsuario"));
         textContra.setText(ConfigManager.ConfigProperties.getProperty("textContra"));
-        TextFieldUsuario.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));  
-        TextFieldContrasenia.setText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));    
+        TextFieldUsuario.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));
+        TextFieldContrasenia.setText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));
         VolverAtrasButton.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
+        openAceptar.setText(ConfigManager.ConfigProperties.getProperty("openAceptar"));
+        
     }
 
-
-      /**
+    /**
      * Funcion para cambiar el idioma del registro
      */
     public void cambiarIdiomaRegistro() {
-        NombreUserText.setText(ConfigManager.ConfigProperties.getProperty("NombreUserText"));
-        PasswordText.setText(ConfigManager.ConfigProperties.getProperty("PasswordText"));
-        EmailText.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));  
-        TextFieldUser.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUser"));    
-        TextFieldPassword.setText(ConfigManager.ConfigProperties.getProperty("TextFieldPassword"));
-        TextFieldEmail.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
-        openAccept.setText(ConfigManager.ConfigProperties.getProperty("openAccept"));
-        BackButton.setText(ConfigManager.ConfigProperties.getProperty("BackButton"));
+        textUsuario.setText(ConfigManager.ConfigProperties.getProperty("textUsuario"));
+        textContra.setText(ConfigManager.ConfigProperties.getProperty("textContra"));
+        EmailText.setText(ConfigManager.ConfigProperties.getProperty("EmailText"));
+        TextFieldUsuario.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));
+        TextFieldContrasenia.setText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));
+        TextFieldEmail.setText(ConfigManager.ConfigProperties.getProperty("TextFieldEmail"));
+        openAceptar.setText(ConfigManager.ConfigProperties.getProperty("openAceptar"));
+        VolverAtrasButton.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
+        
 
     }
-    
+
 }

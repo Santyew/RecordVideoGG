@@ -15,12 +15,12 @@
             <Image url="@../../../imagesfx/cielo.png" />
          </image>
       </ImageView>
-      <Text fx:id="NombreUserText" fill="#005ef5" layoutX="130.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Nombre de Usuario">
+      <Text fx:id="textUsuario" fill="#005ef5" layoutX="130.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Nombre de Usuario">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text fx:id="PasswordText" fill="#005ef5" layoutX="159.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+      <Text fx:id="textContra" fill="#005ef5" layoutX="159.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
          <font>
             <Font size="16.0" />
          </font>
@@ -30,10 +30,10 @@
             <Font size="16.0" />
          </font>
       </Text>
-      <TextField fx:id="TextFieldUser" layoutX="126.0" layoutY="121.0" promptText="Ingrese Usuario" />
-      <TextField fx:id="TextFieldPassword" layoutX="127.0" layoutY="221.0" promptText="Ingrese Contraseña" />
-      <TextField fx:id="TextFieldPassword" layoutX="127.0" layoutY="308.0" promptText="Ingrese Email" />
-      <Button fx:id="openAccept" layoutX="171.0" layoutY="398.0" mnemonicParsing="false" onAction="#onOpenAccept" style="-fx-background-color: #1073c5;" text="Aceptar" textFill="#fffdfd" />
+      <TextField fx:id="TextFieldUsuario" layoutX="126.0" layoutY="121.0" promptText="Ingrese Usuario" />
+      <TextField fx:id="TextFieldContrasenia" layoutX="127.0" layoutY="221.0" promptText="Ingrese Contraseña" />
+      <TextField fx:id="TextFieldEmail" layoutX="127.0" layoutY="308.0" promptText="Ingrese Email" />
+      <Button fx:id="openAceptar" layoutX="171.0" layoutY="398.0" mnemonicParsing="false" onAction="#onAceptar" style="-fx-background-color: #1073c5;" text="Aceptar" textFill="#fffdfd" />
       <ImageView fitHeight="95.0" fitWidth="89.0" layoutX="3.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../imagesfx/278.png" />
@@ -49,6 +49,6 @@
             <Image url="@../../../imagesfx/settings.png" />
          </image>
       </ImageView>
-      <Button fx:id="BackButton" layoutX="3.0" layoutY="476.0" mnemonicParsing="false" onAction="#onBackButton" style="-fx-background-color: #1073c5;" text="Volver Atrás" textFill="WHITE" />
+      <Button fx:id="VolverAtrasButton" layoutX="3.0" layoutY="476.0" mnemonicParsing="false" onAction="#onVolverAtras" style="-fx-background-color: #1073c5;" text="Volver Atrás" textFill="WHITE" />
    </children>
 </Pane>
