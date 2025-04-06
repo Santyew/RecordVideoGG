@@ -69,9 +69,7 @@ public class UsuarioEntity {
         this.email = email;
     }
 
-    /**
-     * Funcion equals de la clase
-     */
+
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -79,17 +77,15 @@ public class UsuarioEntity {
         if (!(o instanceof UsuarioEntity)) {
             return false;
         }
-        UsuarioEntity ususarioModel = (UsuarioEntity) o;
-        return Objects.equals(email, ususarioModel.email);
+        UsuarioEntity usuarioEntity = (UsuarioEntity) o;
+        return Objects.equals(nombre, usuarioEntity.nombre) || Objects.equals(email, usuarioEntity.email);
     }
 
-    /**
-     * Funcion hascode de la clase
-     */
     @Override
     public int hashCode() {
-        return Objects.hash(email);
+        return Objects.hash(nombre, email);
     }
+   
 
     /**
      * Funcion toString de la clase

@@ -44,5 +44,6 @@
       </ImageView>
       <TextField fx:id="TextFieldContrasenia" layoutX="128.0" layoutY="316.0" promptText="Contraseña" />
       <Button fx:id="VolverAtrasButton" layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#onVolverAtras" style="-fx-background-color: #1073c5;" text="Volver atrás" textFill="WHITE" />
+      <Text fx:id="textOk" layoutX="192.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </Pane>
