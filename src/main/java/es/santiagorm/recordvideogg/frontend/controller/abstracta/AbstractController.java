@@ -40,7 +40,6 @@ public class AbstractController {
     @FXML
     public Button VolverAtrasButton;
 
-
     @FXML
     public TextField TextFieldEmail;
 
@@ -96,8 +95,8 @@ public class AbstractController {
     public void cambiarIdiomaLogin() {
         textUsuario.setText(ConfigManager.ConfigProperties.getProperty("textUsuario"));
         textContra.setText(ConfigManager.ConfigProperties.getProperty("textContra"));
-        TextFieldUsuario.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));
-        TextFieldContrasenia.setText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));
+        TextFieldUsuario.setPromptText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));
+        TextFieldContrasenia.setPromptText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));
         VolverAtrasButton.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
         openAceptar.setText(ConfigManager.ConfigProperties.getProperty("openAceptar"));
         
@@ -110,9 +109,9 @@ public class AbstractController {
         textUsuario.setText(ConfigManager.ConfigProperties.getProperty("textUsuario"));
         textContra.setText(ConfigManager.ConfigProperties.getProperty("textContra"));
         EmailText.setText(ConfigManager.ConfigProperties.getProperty("EmailText"));
-        TextFieldUsuario.setText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));
-        TextFieldContrasenia.setText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));
-        TextFieldEmail.setText(ConfigManager.ConfigProperties.getProperty("TextFieldEmail"));
+        TextFieldUsuario.setPromptText(ConfigManager.ConfigProperties.getProperty("TextFieldUsuario"));
+        TextFieldContrasenia.setPromptText(ConfigManager.ConfigProperties.getProperty("TextFieldContrasenia"));
+        TextFieldEmail.setPromptText(ConfigManager.ConfigProperties.getProperty("TextFieldEmail"));
         openAceptar.setText(ConfigManager.ConfigProperties.getProperty("openAceptar"));
         VolverAtrasButton.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
         

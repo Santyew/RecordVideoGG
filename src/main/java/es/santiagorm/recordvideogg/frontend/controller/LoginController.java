@@ -2,6 +2,8 @@ package es.santiagorm.recordvideogg.frontend.controller;
 
 import es.santiagorm.recordvideogg.PrincipalApplication;
 import es.santiagorm.recordvideogg.frontend.controller.abstracta.AbstractController;
+import es.santiagorm.recordvideogg.frontend.model.UsuarioEntity;
+import es.santiagorm.recordvideogg.frontend.model.UsuarioServiceModel;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -20,6 +22,14 @@ public class LoginController extends AbstractController{
 
     @FXML
     protected void onAceptar() {
+
+    
+    String usuarioString = TextFieldUsuario.getText();
+    String contraseniaString = TextFieldContrasenia.getText();
+    UsuarioEntity usuarioLogin = new UsuarioServiceModel().obtenerUsuarioPorNombre(usuarioString, contraseniaString);
+        if(usuarioLogin == null){
+            return;
+        }
          try {
 
             Stage stage = (Stage) openAceptar.getScene().getWindow();

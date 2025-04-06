@@ -57,12 +57,12 @@ public class UsuarioServiceModel extends Conexion{
     }
     /**
      * Funcion que devuelve el usuario por el nombre de usuario y contraseña
-     * @param nombreUsuario a buscar
+     * @param nombre a buscar
      * @param contrasenia a buscar
      * @return usuario buscado
      */
-    public UsuarioEntity obtenerUsuarioPorNombreUsuario(String nombreUsuario, String contrasenia){
-        String sql = "Select * from usuario " + "where nombreUsuario ='" + nombreUsuario + 
+    public UsuarioEntity obtenerUsuarioPorNombre(String nombre, String contrasenia){
+        String sql = "Select * from usuario " + "where nombre ='" + nombre + 
                     "' and contrasenia = '" + contrasenia + "'";
         ArrayList<UsuarioEntity> usuarios = obtenerListaUsuarios(sql);
         if (usuarios.isEmpty()) {
@@ -157,7 +157,7 @@ public class UsuarioServiceModel extends Conexion{
     }
     /**
      * Funcion que verifica si existe el usuario en los ficheros
-     * @param nombreUsuario a verificar
+     * @param nombre a verificar
      * @return true/false
      */
     public boolean verificarUsuario(String nombre){
