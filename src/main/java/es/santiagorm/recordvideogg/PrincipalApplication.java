@@ -13,7 +13,7 @@ public class PrincipalApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("app-init.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 820, 640);
+        Scene scene = new Scene(fxmlLoader.load(), 417, 557);
         stage.setTitle("Pantalla Principal");
         stage.setScene(scene);
         stage.show();

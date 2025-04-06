@@ -7,26 +7,29 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class LoginController extends AbstractController{
+/**
+ * @author: santiago
+ * @version: 1.0
+ */
+public class RegistroController extends AbstractController {
 
-  
-     /**
-     * Funcion que se inicializa nada mas arrancar la app
+    /**
+     * Funcion que carga el idioma en la pantalla registro
      */
     @FXML
-    void initialize(){
-        cambiarIdiomaLogin();
+    void initialize() {
+        cambiarIdiomaRegistro();
     }
 
     @FXML
-    protected void onAceptar() {
+    protected void onOpenAccept() {
          try {
 
-            Stage stage = (Stage) openAceptar.getScene().getWindow();
+            Stage stage = (Stage) openAccept.getScene().getWindow();
 
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("registro.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("app-init.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 417, 557);
-            stage.setTitle("Seleccion de mensaje");
+            stage.setTitle("Pantalla Principal");
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
@@ -36,10 +39,10 @@ public class LoginController extends AbstractController{
     }
 
     @FXML
-    protected void onVolverAtras() {
+    protected void onBackButton() {
          try {
 
-            Stage stage = (Stage) openAceptar.getScene().getWindow();
+            Stage stage = (Stage) BackButton.getScene().getWindow();
 
             FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("app-init.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 417, 557);
@@ -52,4 +55,3 @@ public class LoginController extends AbstractController{
 
     }
 }
-
