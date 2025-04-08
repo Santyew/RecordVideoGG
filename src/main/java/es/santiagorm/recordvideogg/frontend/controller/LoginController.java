@@ -14,6 +14,11 @@ import javafx.scene.Scene;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+
+/**
+ * @author: santiago
+ * @version: 1.0
+ */
 public class LoginController extends AbstractController {
 
     @FXML

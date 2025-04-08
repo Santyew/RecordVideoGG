@@ -4,9 +4,15 @@ import es.santiagorm.recordvideogg.config.ConfigManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
+
+/**
+ * @author: santiago
+ * @version: 1.0
+ */
 public class AbstractController {
 
     private final String pathFichero = "src/main/resources/";
@@ -51,6 +57,18 @@ public class AbstractController {
 
     @FXML
     public Text TextFieldPassword;
+
+    @FXML
+    public SplitMenuButton SelectMail;
+
+    @FXML
+    public Button CopyButton;
+
+    @FXML
+    public Text textID;
+
+    @FXML
+    public TextField IDTextField;
 
     /**
      * Funcion para cargar el idioma
@@ -118,4 +136,24 @@ public class AbstractController {
 
     }
 
+    /**
+     * Funcion para cambiar el idioma de la seleccion de mensajeria
+     */
+    public void cambiarIdiomaSeleccion(){
+        SelectMail.setText(ConfigManager.ConfigProperties.getProperty("SelectMail"));
+        openAceptar.setText(ConfigManager.ConfigProperties.getProperty("openAceptar"));
+        VolverAtrasButton.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
+
+    }
+
+    /**
+     * Funcion para cambiar el idioma del generar ID
+     */
+    public void cambiarIdiomaGeneraID(){
+        textID.setText(ConfigManager.ConfigProperties.getProperty("textID"));
+        CopyButton.setText(ConfigManager.ConfigProperties.getProperty("CopyButton"));
+        VolverAtrasButton.setText(ConfigManager.ConfigProperties.getProperty("VolverAtrasButton"));
+        IDTextField.setText(ConfigManager.ConfigProperties.getProperty("IDTextField"));
+
+    }
 }
