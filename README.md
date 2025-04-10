@@ -4,9 +4,9 @@
 
 Mensajería Pelipper es una aplicación de mensajería paras que cualquier usuario sea capaz de enviar el tipo de mensajería que desee enviar es decir una carta, portal y/o paquete.
 
-La apalicación va dirigida a quellas personas que deseen enviar pedidos online.
+La aplicación va dirigida a aquellas personas que deseen enviar pedidos online.
 
-La diferenia respecto a otras aplicaciones su fácil acceso y envío de mensajería.
+La diferencia respecto a otras aplicaciones su fácil acceso y envío de mensajería.
 
 ## Diseño
 
@@ -46,8 +46,8 @@ mvn exec:java -Dexec.mainClass="com.yourpackage.MainClass"
 
 ### Tabla de Características
 
-|    Característica    | Estado |
-|:--------------------:|:------:|
+|    Característica    | Estado  |
+|:--------------------:|:-------:|
 | Login                | ✅      |
 | Recuperar contraseña | ✅      |
 | Registrar usuarios   | ✅      | 
