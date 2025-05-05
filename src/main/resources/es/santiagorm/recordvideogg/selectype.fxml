@@ -20,8 +20,9 @@
       <Button fx:id="openAceptar" layoutX="175.0" layoutY="404.0" mnemonicParsing="false" onAction="#onAceptar" style="-fx-background-color: #1073c5;" text="Aceptar" textFill="WHITE" />
       <SplitMenuButton fx:id="SelectMail" layoutX="118.0" layoutY="179.0" mnemonicParsing="false" onAction="#onSelectMail" style="-fx-background-color: #1073c5;" text="Seleccione mensajería" textFill="WHITE">
         <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
+          <MenuItem mnemonicParsing="false" text="Carta" />
+          <MenuItem mnemonicParsing="false" text="Postal" />
+          <MenuItem mnemonicParsing="false" text="Paquete" />
         </items>
       </SplitMenuButton>
       <ImageView fitHeight="93.0" fitWidth="86.0" layoutX="14.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">

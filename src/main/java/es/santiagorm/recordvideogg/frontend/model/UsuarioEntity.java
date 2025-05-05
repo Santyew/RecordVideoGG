@@ -8,42 +8,41 @@ import java.util.Objects;
  */
 public class UsuarioEntity {
 
-
-    
     private String password;
-    
+
     private String nombre;
-    
+
     private String email;
 
     /**
      * Constructor vacio
      */
-    public UsuarioEntity(){}
+    public UsuarioEntity() {
+    }
 
     /**
      * Constructor con el atributo principal de la clase
+     * 
      * @param email de usuario
      */
-    public UsuarioEntity(String email){
+    public UsuarioEntity(String email) {
         this.email = email;
     }
 
     /**
      * Constructor de los atributos de la clase
+     * 
      * @param nombreUsuario nombre de usuario
-     * @param password contrasenia del usuario
-     * @param nombre nombre del usuario
-     * @param email email del usuario
+     * @param password      contrasenia del usuario
+     * @param nombre        nombre del usuario
+     * @param email         email del usuario
      */
-    public UsuarioEntity( String password,String nombre,String email ){
-        
+    public UsuarioEntity(String password, String nombre, String email) {
+
         this.password = password;
         this.nombre = nombre;
         this.email = email;
     }
-
-
 
     public String getPassword() {
         return this.password;
@@ -69,7 +68,6 @@ public class UsuarioEntity {
         this.email = email;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -85,17 +83,15 @@ public class UsuarioEntity {
     public int hashCode() {
         return Objects.hash(nombre, email);
     }
-   
 
     /**
      * Funcion toString de la clase
      */
     @Override
     public String toString() {
-        return 
-            getPassword() + "," +
-            getNombre() + "," +
-            getEmail();
+        return getPassword() + "," +
+                getNombre() + "," +
+                getEmail();
     }
 
 }

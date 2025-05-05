@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller.DistributionController">
+   <children>
+      <ImageView fitHeight="568.0" fitWidth="931.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagesfx/cielo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="91.0" layoutX="14.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagesfx/278.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="91.0" layoutX="303.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagesfx/wingull.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagesfx/279.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="VolverAtrasButton" layoutX="14.0" layoutY="492.0" mnemonicParsing="false" onAction="#onVolverAtras" style="-fx-background-color: #1073c5;" text="Volver Atrás" textFill="WHITE" />
+      <Text fill="#0077ff" layoutX="117.0" layoutY="256.0" stroke="#fcfcfc" strokeType="OUTSIDE" strokeWidth="3.0" text="Pedido confirmado, en espera de que el mensajero lo entregue." wrappingWidth="152.02499389648438">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

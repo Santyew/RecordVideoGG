@@ -32,7 +32,7 @@ public abstract class Conexion {
     }
 
     /**
-     * get del pathBD
+     * Funcion get del pathBD
      * @return pathBD
      */
     public String getPathBD(){

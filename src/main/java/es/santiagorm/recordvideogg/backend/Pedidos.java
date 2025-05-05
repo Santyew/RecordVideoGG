@@ -14,13 +14,15 @@ public class Pedidos {
     private List<String> productos;
     private String estado;
 
-/**
- * Genera el constructor vacio
- */
+    /**
+     * Genera el constructor vacio
+     */
     public Pedidos() {
     }
+
     /**
      * Se crea el constructor con las propiedades a declarar
+     * 
      * @param id
      * @param nombreCliente
      * @param productos
@@ -33,7 +35,7 @@ public class Pedidos {
         this.estado = estado;
     }
 
-    //Getters y Setters
+    // Getters y Setters
     public int getId() {
         return this.id;
     }
@@ -94,7 +96,8 @@ public class Pedidos {
             return false;
         }
         Pedidos pedidos = (Pedidos) o;
-        return id == pedidos.id && Objects.equals(nombreCliente, pedidos.nombreCliente) && Objects.equals(productos, pedidos.productos) && Objects.equals(estado, pedidos.estado);
+        return id == pedidos.id && Objects.equals(nombreCliente, pedidos.nombreCliente)
+                && Objects.equals(productos, pedidos.productos) && Objects.equals(estado, pedidos.estado);
     }
 
     @Override
@@ -105,10 +108,10 @@ public class Pedidos {
     @Override
     public String toString() {
         return "{" +
-            " id='" + getId() + "'" +
-            ", nombreCliente='" + getNombreCliente() + "'" +
-            ", productos='" + getProductos() + "'" +
-            ", estado='" + getEstado() + "'" +
-            "}";
+                " id='" + getId() + "'" +
+                ", nombreCliente='" + getNombreCliente() + "'" +
+                ", productos='" + getProductos() + "'" +
+                ", estado='" + getEstado() + "'" +
+                "}";
     }
 }
