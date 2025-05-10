@@ -7,8 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller.DeliveredController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller.DeliveredController">
    <children>
       <ImageView fitHeight="517.0" fitWidth="823.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -31,7 +30,7 @@
          </image>
       </ImageView>
       <Button fx:id="VolverAtrasButton" layoutX="25.0" layoutY="435.0" mnemonicParsing="false" onAction="#onVolverAtras" style="-fx-background-color: #1073c5;" text="Volver Atrás" textFill="WHITE" />
-      <Text fill="#0077ff" layoutX="133.0" layoutY="299.0" stroke="#f5f5f5" strokeType="OUTSIDE" strokeWidth="3.0" text="PEDIDO ENTREGADO">
+      <Text fx:id="TextPedidoE" fill="#0077ff" layoutX="133.0" layoutY="299.0" stroke="#f5f5f5" strokeType="OUTSIDE" strokeWidth="3.0" text="PEDIDO ENTREGADO">
          <font>
             <Font size="16.0" />
          </font>

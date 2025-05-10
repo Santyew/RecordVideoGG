@@ -1,6 +1,5 @@
 package es.santiagorm.recordvideogg.backend;
 
-import java.util.List;
 import java.util.Objects;
 
 /**
@@ -9,10 +8,10 @@ import java.util.Objects;
  */
 public class Pedidos {
 
-    private int id;
+    private String id;
     private String nombreCliente;
-    private List<String> productos;
     private String estado;
+    private String tipo;
 
     /**
      * Genera el constructor vacio
@@ -28,19 +27,44 @@ public class Pedidos {
      * @param productos
      * @param estado
      */
-    public Pedidos(int id, String nombreCliente, List<String> productos, String estado) {
+    public Pedidos(String id, String nombreCliente, String estado, String tipo) {
         this.id = id;
         this.nombreCliente = nombreCliente;
-        this.productos = productos;
         this.estado = estado;
+        this.tipo = tipo;
+    }
+
+    /**
+     * Se crea el constructor con las propiedades necesarias
+     * @param id
+     * @param estado
+     * @param tipo
+     */
+    public Pedidos(String id, String estado, String tipo) {
+        this.id = id;
+        this.estado = estado;
+        this.tipo = tipo;
     }
 
     // Getters y Setters
-    public int getId() {
+    public String getTipo() {
+        return this.tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Pedidos tipo(String tipo) {
+        setTipo(tipo);
+        return this;
+    }
+
+    public String getId() {
         return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -52,14 +76,6 @@ public class Pedidos {
         this.nombreCliente = nombreCliente;
     }
 
-    public List<String> getProductos() {
-        return this.productos;
-    }
-
-    public void setProductos(List<String> productos) {
-        this.productos = productos;
-    }
-
     public String getEstado() {
         return this.estado;
     }
@@ -68,18 +84,13 @@ public class Pedidos {
         this.estado = estado;
     }
 
-    public Pedidos id(int id) {
+    public Pedidos id(String id) {
         setId(id);
         return this;
     }
 
     public Pedidos nombreCliente(String nombreCliente) {
         setNombreCliente(nombreCliente);
-        return this;
-    }
-
-    public Pedidos productos(List<String> productos) {
-        setProductos(productos);
         return this;
     }
 
@@ -96,13 +107,12 @@ public class Pedidos {
             return false;
         }
         Pedidos pedidos = (Pedidos) o;
-        return id == pedidos.id && Objects.equals(nombreCliente, pedidos.nombreCliente)
-                && Objects.equals(productos, pedidos.productos) && Objects.equals(estado, pedidos.estado);
+        return id == pedidos.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombreCliente, productos, estado);
+        return Objects.hash(id);
     }
 
     @Override
@@ -110,7 +120,6 @@ public class Pedidos {
         return "{" +
                 " id='" + getId() + "'" +
                 ", nombreCliente='" + getNombreCliente() + "'" +
-                ", productos='" + getProductos() + "'" +
                 ", estado='" + getEstado() + "'" +
                 "}";
     }

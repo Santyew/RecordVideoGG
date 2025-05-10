@@ -14,7 +14,6 @@ import javafx.scene.Scene;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-
 /**
  * @author: santiago
  * @version: 1.0
@@ -32,6 +31,10 @@ public class LoginController extends AbstractController {
         cambiarIdiomaLogin();
     }
 
+    /**
+     * Funcion que al dar el boton de aceptar permite poner y agregar en el
+     * Textfield palabras y caracteres especiales
+     */
     @FXML
     protected void onAceptar() {
         Pattern pattern = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
@@ -70,6 +73,9 @@ public class LoginController extends AbstractController {
 
     }
 
+    /**
+     * Funcion que cambia a la pantalla anterior
+     */
     @FXML
     protected void onVolverAtras() {
         try {

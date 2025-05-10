@@ -8,10 +8,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller.GenrateIdController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.santiagorm.recordvideogg.frontend.controller.GeneraIdController">
    <children>
-      <ImageView fx:id="VolverAtrasButton" fitHeight="571.0" fitWidth="842.0" layoutX="-1.0" layoutY="-2.0" onDragDetected="#onVolverAtras" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="571.0" fitWidth="842.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../imagesfx/cielo.png" />
          </image>
@@ -23,7 +22,7 @@
       </Text>
       <Button fx:id="CopyButton" layoutX="180.0" layoutY="371.0" mnemonicParsing="false" onAction="#onCopy" style="-fx-background-color: #1073c5;" text="Copiar" textFill="WHITE" />
       <Button fx:id="VolverAtrasButton" layoutX="23.0" layoutY="466.0" mnemonicParsing="false" onAction="#onVolverAtras" style="-fx-background-color: #1073c5;" text="Volver Atrás" textFill="WHITE" />
-      <TextField fx:id="IDTextField" layoutX="118.0" layoutY="316.0" onAction="#onIDField" prefHeight="26.0" prefWidth="182.0" promptText="ID pedido" />
+      <TextField fx:id="IDTextField" layoutX="118.0" layoutY="316.0" prefHeight="26.0" prefWidth="182.0" promptText="ID pedido" />
       <ImageView fitHeight="106.0" fitWidth="92.0" layoutX="-1.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../imagesfx/278.png" />

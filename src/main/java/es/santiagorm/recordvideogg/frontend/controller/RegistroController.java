@@ -23,6 +23,7 @@ public class RegistroController extends AbstractController {
 
     @FXML
     Text textOk;
+
     /**
      * Funcion que carga el idioma en la pantalla registro
      */
@@ -54,7 +55,7 @@ public class RegistroController extends AbstractController {
         }
 
         boolean comprobar = new UsuarioServiceModel().agregarUsuario(contraseniaString, usuarioString, emailString);
-        if(!comprobar){
+        if (!comprobar) {
             textOk.setText(ConfigManager.ConfigProperties.getProperty("textOkerror4"));
             return;
         }

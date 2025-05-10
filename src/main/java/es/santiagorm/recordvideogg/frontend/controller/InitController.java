@@ -15,28 +15,23 @@ import javafx.stage.Stage;
  * @author: santiago
  * @version: 1.0
  */
-public class InitController extends AbstractController{
+public class InitController extends AbstractController {
 
-   
-
-   /**
+    /**
      * Funcion que se inicializa nada mas arrancar la app
      */
     @FXML
-    void initialize(){
+    void initialize() {
 
         UsuarioServiceModel usuarioServiceModel = new UsuarioServiceModel();
-        List <String> listaIdiomas = new ArrayList<>();
+        List<String> listaIdiomas = new ArrayList<>();
         listaIdiomas.add("es");
         listaIdiomas.add("en");
         listaIdiomas.add("pt");
         openIdiomas.getItems().addAll(listaIdiomas);
         cargarIdiomaActual();
         cambiarIdiomaInit();
-        
-        
 
-        
     }
 
     /**
@@ -48,11 +43,12 @@ public class InitController extends AbstractController{
         setIdioma(idioma);
         cargarIdiomaActual();
         cambiarIdiomaInit();
-        
-        
+
     }
 
-
+    /**
+     * Metodo para ir a la pantalla de iniciar sesion
+     */
     @FXML
     protected void onLoginButton() {
 
@@ -71,6 +67,9 @@ public class InitController extends AbstractController{
 
     }
 
+    /**
+     * Metodo para ir a la pantalla de registro para nuevos usuarios
+     */
     @FXML
     protected void onNewUser() {
 
@@ -89,12 +88,15 @@ public class InitController extends AbstractController{
 
     }
 
+    /**
+     * Metodo para cambiar el idioma seleccionandolo
+     */
     @FXML
     protected void onSelectIdioma() {
-        
+
         try {
             String selectedLanguage = (String) openIdiomas.getValue();
-            
+
             System.out.println("Selecciona idioma " + selectedLanguage);
         } catch (Exception e) {
             e.printStackTrace();
