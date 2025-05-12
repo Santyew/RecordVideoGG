@@ -51,3 +51,5 @@ mvn exec:java -Dexec.mainClass="com.yourpackage.MainClass"
 | Login                | ✅      |
 | Recuperar contraseña | ✅      |
 | Registrar usuarios   | ✅      | 
+| Generar id           | ✅      | 
+| Generar diferentes estado de envio   | ✅      | 
